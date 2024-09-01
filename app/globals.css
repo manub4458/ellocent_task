@@ -2,32 +2,943 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+html,body{
+  overflow-x: hidden;
+}
+li{
+  list-style: none;
+}
+.bg{
+  background: linear-gradient(108.88deg, #FFFFFF 11.1%, rgba(77, 223, 253, 0.3) 86.69%);
+
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@media screen and (max-width: 1024px) {
+  .headlist{
+    column-gap: 48px;
+  }
+  .hero-content{
+    font-size: 36px;
+    width: 500px;
+  }
+  .hero-minicontent{
+    width: 500px;
+    line-height: 26px;
+    font-size: 16px;
+  }
+  .hero-btn{
+    width: 140px;
+    height: 50px;
+
+  }
+  .hero-image{
+    width: 300px;
+    height: 280px;
+  }
+  .manage-img{
+    width: 220px;
+    height: 300px;
+  }
+  .daily-img{
+    width: 200px;
+    height: 200px;
+  }
+  .book-img{
+    width: 200px;
+    height: 100px;
+  }
+  .overview-minicontent{
+    width: 420px;
+  }
+  .overview-btn{
+    width: 230px;
+    height: 50px;
+  }
+  .clinic-img{
+    width: 320px;
+  }
+  .benefit-container{
+    height: 923px;
+  }
+  .pateint-benefit-conatiner{
+    height: 923px;
+  }
+  .benefit-head{
+    width: 450px;
+    margin-left: 54px;
+    font-size: 30px;
+  }
+  .benefit-minicontent{
+    width: 550px;
+    height: 130px;
+  }
+  .benefit-para{
+    width: 400px;
+    height: 120px;
+  }
+  .clinit1-img{
+    width: 60px;
+    height: 60px;
+  }
+  .work-container{
+    height: 800px;
+  }
+  .work{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .work-content{
+    width: 680px;
+    text-align: center;
+  }
+  .work-minicontent{
+    width: 420px;
+  }
+  .get-app{
+    height: 400px;
+  }
+  .about-us{
+    height: 900px;
+  
+  }
+  .about-head{
+    width: 430px;
+  }
+  .about-para{
+    width: 435px;
+  }
+  .contact-container{
+    width: 420px;
+  }
+  .contact-main{
+    width: 375px;
+  }
+  .faq-container{
+    height: 800px;
+    display: flex;
+    justify-content: center;
+  }
+  .faq-left-container{
+    width: 410px;
+    height: 90px;
+  }
+  .faq-detail{
+    width: 340px;
+  }
+  .faq-img1{
+    width: 220px;
+    margin-left: 40px; 
+  }
+  .faq-img2{
+    width: 260px;
+    transform: translateX(-120px);
   }
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@media screen and (max-width: 768px) {
+  .hero-container{
+     height: 100%;
+  }
+ 
+  .logo-text{
+    width: 60px;
+  }
+  .login-btn{
+    width: 90px;
+    height: 50px;
+  }
+  .signup-btn{
+    width: 90px;
+    height: 50px;
+  }
+  .headlist{
+    column-gap: 20px;
+  }
+  .headlist li{
+    width: 60px;
+  }
+  .hero-main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 50px;
+  }
+  .hero-main-one{
+    margin-left: 70px;
+  }
+  .hero-content{
+    width: 90%;
+  }
+  .hero-minicontent{
+    width: 80%;
+  }
+  .hero-image-div{
+  display: flex;
+  justify-content: center;
+  }
+  .hero-image{
+   margin-left: 80px;
+   width: 600px;
+   height: 350px;
+  }
+  .overview-container{
+    height: 80vh;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: start;
+    flex-wrap: wrap;
+    
+  }
+  .overview-maincontent{
+    margin-left: 70px;
+  }
+  .overview-minicontent{
+    width: 80%;
+  }
+  .overview-image{
+    margin-left: 75px;
+  }
+  .manage-img{
+    width: 260px;
+    height: 330px;
+  }
+  .daily-img{
+    width: 240px;
+    height: 240px;
+  }
+  .book-img{
+    width: 240px;
+    height: 120px;
+  }
+  .benefit-container{
+    height: 160vh;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+  }
+  .benefit-clinic-mainconatiner{
+    margin-left: 70px;
+  }
+  .benefit-head{
+    width: 80%;
+    margin-left: 54px;
+    font-size: 30px;
+  }
+  .benefit-minicontent{
+    width: 85%;
+    height: 130px;
+  }
+  .benefit-para{
+    width: 90%;
+    height: 120px;
+  }
+  .clinit1-img{
+    width: 90px;
+    height: 90px;
+  }
+  .pateint-benefit-conatiner{
+    height: 150vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .benefit-patient-container{
+    margin-left: 70px;
+  }
+  .clinic-img {
+    margin-left: 150px;
+  }
+  .work-container{
+    height: 120vh;
+  }
+  .work{
+    gap: 30px;
+  }
+  .get-app{
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+    justify-content: center;
+    margin: 80px auto;
+  }
+  .about-us{
+    display: flex;
+    flex-wrap: wrap;
+   height: 100vh;
+   justify-content: flex-start;
+   margin-left: 80px;
+  }
+  .about-head{
+    width: 80%;
+  }
+  .about-para{
+    width: 80%;
+  }
+  .faq-container{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    margin: 80px auto;
+    justify-content: flex-start;
+    margin-left: 80px;
+  }
+  .faq-left-container{
+    width: 90%;
+  }
+  .faq-detail{
+    width: 90%;
   }
 }
+@media screen and (max-width: 500px) {
+
+.hero-container{
+  height: 80vh;
+  
+}
+.hero-main{
+  height: max-content;
+
+}
+.hero-main-one{
+  margin-left: 30px;
+}
+.hero-content{
+  font-size: 20px;
+  width: 100%;
+  height: 70px;
+  line-height: 38px;
+
+}
+.hero-minicontent{
+  height: 180px;
+  width: 95%;
+}
+.hero-top{
+display: flex;
+flex-wrap: wrap;
+gap: 16px;
+}
+.hero-btn{
+  width: 100px;
+  height: 45px;
+  font-size: 14px;
+}
+.hero-image{
+  margin-left: 25px;
+  width: 700px;
+  height: 350px;
+ }
+ .overview-container{
+  height: 90vh;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: start;
+ }
+ .overview-maincontent{
+  margin-left: 30px;
+ 
+ }
+ .overview-minicontent{
+  width: 90%;
+ }
+ .overview-image{
+  margin-left: 20px;
+ }
+ .manage-img{
+  width: 170px;
+  height: 280px;
+}
+.daily-img{
+  width: 170px;
+  height: 200px;
+}
+.book-img{
+  width: 170px;
+  height: 100px;
+}
+.overview-btn{
+  width: 200px;
+  height: 50px;
+  font-size: 14px;
+}
+.benefit-container{
+  height: 100%;
+  margin: 80px auto;
+}
+.benefit-clinic-mainconatiner{
+  margin-left: 20px;
+}
+.benefit-head{
+  width: 100%;
+  margin-left: 14px;
+  font-size: 30px;
+}
+.benefit-minicontent{
+  width: 100%;
+  height: 180px;
+}
+.benefit-para{
+  width: 85%;
+  height: 150px;
+}
+.clinit1-img{
+  width:  140px;
+  height: 140px;
+}
+.clinic-img{
+  margin-left: 90px;
+  width:  250px;
+  height: 250px;
+}
+.benefit-patient-container{
+  margin-left: 20px;
+  height: 80vh;
+}
+.work-container{
+  height: 120vh;
+  margin: 100px auto;
+}
+.work-text{
+  font-size: 24px;
+}
+.work-content{
+  margin: auto 3px;
+  width: 100%;
+}
+.work{
+  gap: 30px;
+}
+.work-icon{
+ height: 60px;
+ width: 60px;
+}
+.work-mini-head{
+  font-size: 18px;
+}
+.work-minicontent{
+  font-size: 14px;
+  text-align: center;
+}
+.get-app-text{
+  font-size: 26px;
+}
+.get-app-minitext{
+  font-size: 16px;
+}
+.app-store-icon{
+  width: 150px;
+  height: 60px;
+}
+.play-store-icon{
+  width: 150px;
+  height: 60px;
+}
+.about-us{
+  height: 140vh;
+  margin-left: 25px;
+}
+.about-head{
+  width: 90%;
+}
+.about-para{
+  width: 90%;
+  font-size: 15px;
+}
+.about-btn{
+  width: 120px;
+  height: 40px;
+  font-size: 14px;
+}
+.contact-container{
+  width: 375px;
+  height: 500px;
+}
+.contact-main{
+  width: 320px;
+  height: 450px;
+}
+.faq-container{
+  margin-left: 25px;
+}
+.faq-img1{
+  margin-left: 5px;
+}
+.faq-left-container{
+  width: 95%;
+  height: 120px;
+}
+.footer-container{
+  height: 60vh;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 300px;
+  justify-content: flex-start;
+  /* gap: 50px; */
+}
+.footer-left-text{
+  width: 100%;
+  margin-left: 10px;
+  height: 10px;
+}
+.footer-bottom{
+  width: 100%;
+}
+
+}
+@media screen and (max-width: 380px) {
+
+  .hero-container{
+    height: 80vh;
+    
+  }
+  .hero-main{
+    height: max-content;
+  
+  }
+  .hero-main-one{
+    margin-left: 30px;
+  }
+  .hero-content{
+    font-size: 20px;
+    width: 100%;
+    height: 70px;
+    line-height: 38px;
+  
+  }
+  .hero-minicontent{
+    height: 180px;
+    width: 95%;
+  }
+  .hero-btn{
+    width: 100px;
+    height: 45px;
+    font-size: 14px;
+  }
+  .hero-image{
+    margin-left: 25px;
+    width: 700px;
+    height: 350px;
+   }
+   .overview-container{
+    height: 160vh;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: start;
+   }
+   .overview-maincontent{
+    margin-left: 30px;
+   
+   }
+   .overview-minicontent{
+    width: 90%;
+   }
+   .overview-image{
+    margin-left: 20px;
+   }
+   .manage-img{
+    width: 150px;
+    height: 280px;
+  }
+  .daily-img{
+    width: 150px;
+    height: 200px;
+  }
+  .book-img{
+    width: 150px;
+    height: 100px;
+  }
+  .overview-btn{
+    width: 200px;
+    height: 50px;
+    font-size: 14px;
+  }
+  .benefit-container{
+    height: 100%;
+    margin: 80px auto;
+  }
+  .benefit-clinic-mainconatiner{
+    margin-left: 20px;
+  }
+  .benefit-head{
+    width: 90%;
+    margin-left: 1px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .benefit-minicontent{
+    width: 100%;
+    height: 120px;
+  }
+  .benefit-para{
+    width: 90%;
+    height: 120px;
+    font-size: 14px;
+  }
+ 
+  .clinit1-img{
+    width:  190px;
+    height: 80px;
+  }
+  .clinic-img{
+    margin-left: 60px;
+    width:  250px;
+    height: 250px;
+  }
+  .benefit-patient-container{
+    margin-left: 20px;
+    height: 80vh;
+  }
+  .work-container{
+    height: 150vh;
+    margin: 100px auto;
+  }
+  .work-text{
+    font-size: 20px;
+  }
+  .work-content{
+    margin-left: 20px;
+    width: 90%;
+  }
+  .work{
+    gap: 30px;
+  }
+  .work-icon{
+   height:50px;
+   width: 50px;
+  }
+  .work-mini-head{
+    font-size: 14px;
+   
+  }
+  .work-minicontent{
+    font-size: 14px;
+    text-align: center;
+    width: 90%;
+    margin-left: 20px;
+
+    
+  }
+  .get-app-text{
+    font-size: 26px;
+  }
+  .get-app-minitext{
+    font-size: 16px;
+  }
+  .app-store-icon{
+    width: 120px;
+    height: 60px;
+  }
+  .play-store-icon{
+    width: 120px;
+    height: 60px;
+  }
+  .about-us{
+    height: 160vh;
+    margin-left: 20px;
+  }
+  .about-head{
+    width: 90%;
+    font-size: 16px;
+  }
+  .about-para{
+    width: 90%;
+    font-size: 14px;
+  }
+  .about-btn{
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+  }
+  .contact-container{
+    width: 330px;
+    height: 500px;
+  }
+  .contact-main{
+    width: 270px;
+    height: 450px;
+  }
+  .faq-container{
+    margin-left: 20px;
+    height: 130vh;
+  }
+  .faq-head{
+    font-size: 26px;
+    
+  }
+  .faq-img1{
+    margin-left: 5px;
+  }
+  details span{
+    font-size: 14px;
+  }
+  .faq-left-container{
+    width: 95%;
+    height: 120px;
+  }
+  .footer-container{
+    height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 300px;
+    justify-content: flex-start;
+    /* gap: 50px; */
+  }
+  .footer-left-text{
+    width: 95%;
+    margin-left: 10px;
+    height: 10px;
+  }
+  .footer-bottom{
+    width: 100%;
+  }
+  
+  }
+
+
+  @media screen and (max-width: 340px) {
+
+    .hero-container{
+      height: max-content;
+      
+    }
+    .hero-main{
+      height: max-content;
+      margin-left: 20px;
+    
+    }
+    .logo-text{
+      font-size: 40px;
+    }
+    .hero-main-one{
+      margin-left: 30px;
+      height: max-content;
+    }
+    .hero-content{
+      font-size: 20px;
+      width: 100%;
+      height: 100px;
+      line-height: 38px;
+    
+    }
+    .hero-minicontent{
+      height: max-content;
+      width: 95%;
+    }
+    .hero-btn{
+      width: 100px;
+      height: 45px;
+      font-size: 14px;
+    }
+    .hero-image{
+      margin-left: 25px;
+      width: 700px;
+      height: 350px;
+     }
+     .overview-container{
+      height:max-content;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-left: 20px;
+      text-align: start;
+     }
+     .overview-maincontent{
+      margin-left: 30px;
+     
+     }
+     .overview-minicontent{
+      width: 90%;
+      font-size: 10px;
+     }
+     .overview-image{
+      margin-left: 20px;
+     }
+     .manage-img{
+      width: 150px;
+      height: 280px;
+    }
+    .daily-img{
+      width: 150px;
+      height: 200px;
+    }
+    .book-img{
+      width: 150px;
+      height: 100px;
+    }
+    .overview-btn{
+      width: 150px;
+      height: 40px;
+      font-size: 14px;
+    }
+    .benefit-container{
+      height: 100%;
+      width: 95%;
+      /* margin: 80px auto; */
+      margin-left: 30px;
+      
+    }
+    .benefit-clinic-mainconatiner{
+      margin-left: 20px;
+    }
+    .benefit-head{
+      width: 90%;
+      height: max-content;
+      margin-left: 1px;
+      font-size: 20px;
+      line-height: 30px;
+    }
+    .benefit-minicontent{
+      width: 95%;
+      height: 120px;
+    }
+    .benefit-para{
+      width: 90%;
+      height: 120px;
+      font-size: 12px;
+    }
+    .clininc-lorem-head {
+      font-size: 16px;
+    }
+   
+    .clinit1-img{
+      width:  130px;
+      height: 70px;
+    }
+    .clinic-img{
+      margin-left: 30px;
+      width:  250px;
+      height: 250px;
+    }
+    .benefit-patient-container{
+      height: max-content;
+      width: 95%;
+      /* margin: 80px auto; */
+      margin-left: 50px;
+    }
+    .patient-img{
+      margin-left: 50px;
+    }
+    .work-container{
+      height: max-content;
+      margin: 100px auto;
+    }
+    .work-text{
+      font-size: 20px;
+      margin-left: 60px;
+    }
+    .work-content{
+      margin-left: 40px;
+      width: 90%;
+    }
+    .work{
+      gap: 30px;
+      margin-left: 55px;
+    }
+    .work-icon{
+     height:50px;
+     width: 50px;
+    }
+    .work-mini-head{
+      font-size: 14px;
+     
+    }
+    .work-minicontent{
+      font-size: 14px;
+      text-align: center;
+      width: 90%;
+      margin-left: 20px;
+  
+      
+    }
+    .get-app{
+      width: 100%;
+      margin-left: 30px;
+    }
+    .get-app-text{
+      font-size: 20px;
+    }
+    .get-app-minitext{
+      font-size: 16px;
+    }
+    .app-store-icon{
+      width: 100px;
+      height: 60px;
+    }
+    .app-icon-div{
+      width: 90%;
+    }
+    .play-store-icon{
+      width: 110px;
+      height: 60px;
+    }
+    .about-us{
+      height: 160vh;
+      margin-left: 75px;
+    }
+    .about-head{
+      width: 90%;
+      font-size: 16px;
+    }
+   
+    .about-para{
+      width: 90%;
+      font-size: 14px;
+    }
+    .about-btn{
+      width: 120px;
+      height: 40px;
+      font-size: 14px;
+    }
+    .contact-container{
+      width: 290px;
+      height: 500px;
+      margin-left: 60px;
+    }
+    .contact-main{
+      width: 200px;
+      height: 450px;
+
+    }
+  
+    .faq-container{
+      margin-left: 20px;
+      height: 130vh;
+    }
+    .faq-head{
+      font-size: 26px;
+      
+    }
+    .faq-img1{
+      margin-left: 5px;
+    }
+    details span{
+      font-size: 14px;
+    }
+    .faq-left-container{
+      width: 95%;
+      height: 120px;
+    }
+    .footer-container{
+      height: 90vh;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 300px;
+      justify-content: flex-start;
+      /* gap: 50px; */
+    }
+    .footer-left-text{
+      width: 95%;
+      margin-left: 10px;
+      height: 10px;
+    }
+    .footer-bottom{
+      width: 100%;
+    }
+    
+    }
+    
